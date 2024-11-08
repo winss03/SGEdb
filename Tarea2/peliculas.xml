@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<record id="film_1" model="videoclub.peliculas">
+  <field name="name">Pulp Fiction</field>
+  <field name="director" ref="director_1" />
+  <field name="actors" eval="[(6,0,[ref('actor_1'), ref('actor_2')])]" />
+  <field name="release">1995-01-13</field>
+  <field name="country">Estados Unidos</field>
+  <field name="duration">154</field>
+  <field name="rating">5</field>
+  <field file="videoclub/static/img/pulp.jpg" name="cover" type="base64" />
+</record>
+
+<record id="film_2" model="videoclub.peliculas">
+  <field name="name">The Matrix</field>
+  <field name="director" ref="director_2" />
+  <field name="actors" eval="[(6,0,[ref('actor_3'), ref('actor_4')])]" />
+  <field name="release">1999-03-31</field>
+  <field name="country">Estados Unidos</field>
+  <field name="duration">136</field>
+  <field name="rating">4</field>
+  <field file="videoclub/static/img/matrix.jpg" name="cover" type="base64" />
+</record>
+
+<record id="film_3" model="videoclub.peliculas">
+  <field name="name">Inception</field>
+  <field name="director" ref="director_3" />
+  <field name="actors" eval="[(6,0,[ref('actor_5'), ref('actor_6'), ref('actor_7')])]" />
+  <field name="release">2010-07-16</field>
+  <field name="country">Reino Unido</field>
+  <field name="duration">148</field>
+  <field name="rating">5</field>
+  <field file="videoclub/static/img/inception.jpg" name="cover" type="base64" />
+</record>
+
+<record id="film_4" model="videoclub.peliculas">
+  <field name="name">The Dark Knight</field>
+  <field name="director" ref="director_4" />
+  <field name="actors" eval="[(6,0,[ref('actor_8'), ref('actor_9')])]" />
+  <field name="release">2008-07-18</field>
+  <field name="country">Estados Unidos</field>
+  <field name="duration">152</field>
+  <field name="rating">5</field>
+  <field file="videoclub/static/img/dark_knight.jpg" name="cover" type="base64" />
+</record>
+
+<record id="film_5" model="videoclub.peliculas">
+  <field name="name">Interstellar</field>
+  <field name="director" ref="director_5" />
+  <field name="actors" eval="[(6,0,[ref('actor_10'), ref('actor_11')])]" />
+  <field name="release">2014-11-07</field>
+  <field name="country">Estados Unidos</field>
+  <field name="duration">169</field>
+  <field name="rating">4</field>
+  <field file="videoclub/static/img/interstellar.jpg" name="cover" type="base64" />
+</record>
+
+</data>

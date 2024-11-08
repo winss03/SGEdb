@@ -1,0 +1,4 @@
+# Ignorar archivos .DS_Store en cualquier subdirectorio
+**/.DS_Store
+# Ignorar archivos temporales
+*.tmp

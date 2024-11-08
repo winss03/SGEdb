@@ -1,0 +1,6 @@
+name,director,actors,release,country,duration,rating,file
+Pulp Fiction,director_1,actor_1-actor_2,1995-01-13,Estados Unidos,154,5,videoclub/static/img/pulp.jpg
+The Matrix,director_2,actor_3-actor_4,1999-03-31,Estados Unidos,136,4,videoclub/static/img/matrix.jpg
+Inception,director_3,actor_5-actor_6-actor_7,2010-07-16,Reino Unido,148,5,videoclub/static/img/inception.jpg
+The Dark Knight,director_4,actor_8-actor_9,2008-07-18,Estados Unidos,152,5,videoclub/static/img/dark_knight.jpg
+Interstellar,director_5,actor_10-actor_11,2014-11-07,Estados Unidos,169,4,videoclub/static/img/interstellar.jpg
