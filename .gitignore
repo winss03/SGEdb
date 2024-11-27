@@ -2,3 +2,5 @@
 **/.DS_Store
 # Ignorar archivos temporales
 *.tmp
+#Ignorar video mp4 
+*.mp4
