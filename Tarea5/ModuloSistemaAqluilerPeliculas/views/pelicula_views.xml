@@ -1,0 +1,41 @@
+<odoo>
+    <!-- Vista Tree (Lista) para Películas -->
+    <record id="view_pelicula_tree" model="ir.ui.view">
+        <field name="name">alquiler.pelicula.tree</field>
+        <field name="model">alquiler.pelicula</field>
+        <field name="arch" type="xml">
+            <tree string="Películas">
+                <field name="name"/>
+                <field name="categoria_id" widget="many2one"/>
+                <field name="estado"/>
+                <field name="fecha_estreno"/>
+                <field name="duracion"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vista Form para Películas -->
+    <record id="view_pelicula_form" model="ir.ui.view">
+        <field name="name">alquiler.pelicula.form</field>
+        <field name="model">alquiler.pelicula</field>
+        <field name="arch" type="xml">
+            <form string="Película">
+                <sheet>
+                    <group>
+                        <field name="name" widget="char"/>
+                        <field name="descripcion"/>
+                        <field name="fecha_estreno"/>
+                        <field name="duracion"/>
+                        <field name="categoria_id"/>
+                        <field name="actor_ids" widget="many2many_tags"/>
+                        <field name="estado" widget="selection"/>
+                        <field name="tipo_pelicula" widget="selection"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+   
+
+</odoo>

@@ -1,0 +1,11 @@
+<odoo>
+    <record id="group_alquiler_usuario_estandar" model="res.groups">
+        <field name="name">Usuarios Estándar</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+
+    <record id="group_alquiler_admin" model="res.groups">
+        <field name="name">Administradores</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+</odoo>

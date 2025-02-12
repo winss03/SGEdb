@@ -1,0 +1,34 @@
+<odoo>
+    <!-- Menú principal para la gestión de alquiler de películas -->
+    <menuitem id="menu_alquiler_root" name="Alquiler de Películas"/>
+
+    <!-- Submenú para Categorías de Películas -->
+    <menuitem id="menu_categoria" name="Categorías" parent="menu_alquiler_root" action="action_categoria"/>
+
+    <!-- Submenú para Actores -->
+    <menuitem id="menu_actor" name="Actores" parent="menu_alquiler_root" action="action_actor"/>
+
+    <!-- Submenú para Películas -->
+    <menuitem id="menu_pelicula" name="Películas" parent="menu_alquiler_root" action="action_pelicula"/>
+
+    <!-- Acción para Películas -->
+    <record id="action_pelicula" model="ir.actions.act_window">
+        <field name="name">Películas</field>
+        <field name="res_model">alquiler.pelicula</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Acción para Categorías -->
+    <record id="action_categoria" model="ir.actions.act_window">
+        <field name="name">Categorías</field>
+        <field name="res_model">alquiler.categoria</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Acción para Actores -->
+    <record id="action_actor" model="ir.actions.act_window">
+        <field name="name">Actores</field>
+        <field name="res_model">alquiler.actor</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

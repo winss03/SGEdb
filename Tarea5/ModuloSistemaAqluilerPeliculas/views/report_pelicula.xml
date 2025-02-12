@@ -1,0 +1,24 @@
+<odoo>
+    <!-- Definición del informe -->
+    <record id="action_report_pelicula" model="ir.actions.report">
+        <field name="name">Informe de Película</field>
+        <field name="model">alquiler.pelicula</field>
+        <field name="report_name">modulo_sistema_aqluiler_peliculas.report_pelicula</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="print_report_name">'Película ' + object.name</field>
+    </record>
+
+    <!-- Vista QWeb para el informe -->
+    <template id="report_pelicula">
+        <t t-name="modulo_sistema_aqluiler_peliculas.report_pelicula">
+            <div class="page">
+                <h2>Informe de la Película: <t t-esc="doc.name"/></h2>
+                <p><strong>Descripción:</strong> <t t-esc="doc.descripcion"/></p>
+                <p><strong>Fecha de Estreno:</strong> <t t-esc="doc.fecha_estreno"/></p>
+                <p><strong>Duración:</strong> <t t-esc="doc.duracion"/> minutos</p>
+                <p><strong>Categoría:</strong> <t t-esc="doc.categoria_id.name"/></p>
+                <p><strong>Estado:</strong> <t t-esc="doc.estado"/></p>
+            </div>
+        </t>
+    </template>
+</odoo>

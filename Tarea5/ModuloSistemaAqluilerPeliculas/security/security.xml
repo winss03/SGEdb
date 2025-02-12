@@ -1,0 +1,24 @@
+<odoo>
+    <!-- Regla de acceso para los actores -->
+    <record id="alquiler_actor_rule_user" model="ir.rule">
+        <field name="name">Acceso solo lectura para usuarios estándar</field>
+        <field name="model_id" ref="model_alquiler_actor"/>
+        <field name="domain_force">[('user_id', '=', user.id)]</field> <!-- Solo acceso a los registros del usuario actual -->
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/> <!-- Grupo de usuarios estándar -->
+        <field name="perm_read" eval="True"/> <!-- Permiso de lectura -->
+        <field name="perm_write" eval="False"/> <!-- Sin permisos de escritura -->
+        <field name="perm_create" eval="False"/> <!-- Sin permisos de creación -->
+        <field name="perm_unlink" eval="False"/> <!-- Sin permisos de eliminación -->
+    </record>
+
+    <!-- Regla de acceso para los administradores -->
+    <record id="alquiler_actor_rule_admin" model="ir.rule">
+        <field name="name">Acceso completo para administradores</field>
+        <field name="model_id" ref="model_alquiler_actor"/>
+        <field name="groups" eval="[(4, ref('base.group_system'))]"/> <!-- Grupo de administradores -->
+        <field name="perm_read" eval="True"/> <!-- Permiso de lectura -->
+        <field name="perm_write" eval="True"/> <!-- Permiso de escritura -->
+        <field name="perm_create" eval="True"/> <!-- Permiso de creación -->
+        <field name="perm_unlink" eval="True"/> <!-- Permiso de eliminación -->
+    </record>
+</odoo>

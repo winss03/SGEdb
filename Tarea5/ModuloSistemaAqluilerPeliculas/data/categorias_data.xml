@@ -1,0 +1,6 @@
+<odoo>
+    <record id="categoria_accion" model="alquiler.categoria">
+        <field name="name">Acción</field>
+        <field name="descripcion">Películas de acción y aventura</field>
+    </record>
+</odoo>

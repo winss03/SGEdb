@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_alquiler_actor_user,access_alquiler_actor_user,model_alquiler_actor,group_alquiler_usuario_estandar,1,0,0,0
+access_alquiler_actor_admin,access_alquiler_actor_admin,model_alquiler_actor,group_alquiler_admin,1,1,1,1
+access_alquiler_pelicula_user,access_alquiler_pelicula_user,model_alquiler_pelicula,group_alquiler_usuario_estandar,1,0,0,0
+access_alquiler_pelicula_admin,access_alquiler_pelicula_admin,model_alquiler_pelicula,group_alquiler_admin,1,1,1,1
+access_alquiler_categoria_user,access_alquiler_categoria_user,model_alquiler_categoria,group_alquiler_usuario_estandar,1,0,0,0
+access_alquiler_categoria_admin,access_alquiler_categoria_admin,model_alquiler_categoria,group_alquiler_admin,1,1,1,1
+
+
+
+
+
+
+
+

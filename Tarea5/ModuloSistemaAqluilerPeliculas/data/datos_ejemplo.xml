@@ -1,0 +1,44 @@
+<odoo>
+    <!-- Datos de ejemplo para Categorías -->
+    <record id="categoria_accion" model="alquiler.categoria">
+        <field name="name">Acción</field>
+        <field name="descripcion">Películas de acción y aventura.</field>
+    </record>
+
+    <record id="categoria_comedia" model="alquiler.categoria">
+        <field name="name">Comedia</field>
+        <field name="descripcion">Películas de comedia y entretenimiento.</field>
+    </record>
+
+    <!-- Datos de ejemplo para Actores -->
+    <record id="actor_juan" model="alquiler.actor">
+        <field name="name">Juan Pérez</field>
+        <field name="nacionalidad">México</field>
+        <field name="fecha_nacimiento">1980-01-01</field>
+    </record>
+
+    <record id="actor_maria" model="alquiler.actor">
+        <field name="name">María Gómez</field>
+        <field name="nacionalidad">España</field>
+        <field name="fecha_nacimiento">1990-05-12</field>
+    </record>
+
+    <!-- Datos de ejemplo para Películas -->
+    <record id="pelicula_accion1" model="alquiler.pelicula">
+        <field name="name">Misión Imposible</field>
+        <field name="descripcion">Una película de acción llena de adrenalina.</field>
+        <field name="fecha_estreno">2022-07-15</field>
+        <field name="duracion">120</field>
+        <field name="categoria_id" ref="categoria_accion"/>
+        <field name="actor_ids" eval="[(4, ref('actor_juan'))]"/>
+    </record>
+
+    <record id="pelicula_comedia1" model="alquiler.pelicula">
+        <field name="name">La Risa Prohibida</field>
+        <field name="descripcion">Una comedia que te hará reír sin parar.</field>
+        <field name="fecha_estreno">2021-10-20</field>
+        <field name="duracion">90</field>
+        <field name="categoria_id" ref="categoria_comedia"/>
+        <field name="actor_ids" eval="[(4, ref('actor_maria'))]"/>
+    </record>
+</odoo>
